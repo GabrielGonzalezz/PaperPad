@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaperPad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kalam:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      .font-sans { font-family: 'Inter', sans-serif; }
+      .font-serif { font-family: 'Lora', serif; }
+      .font-mono { font-family: 'Roboto Mono', monospace; }
+      .font-handwriting { font-family: 'Kalam', cursive; }
+      .graph-paper {
+        background-color: #f1f5f9;
+        background-image:
+          linear-gradient(rgba(96, 165, 250, 0.3) 1px, transparent 1px),
+          linear-gradient(to right, rgba(96, 165, 250, 0.3) 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
